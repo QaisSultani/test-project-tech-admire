@@ -38,7 +38,7 @@ const LoginForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit() {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);

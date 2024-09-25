@@ -27,7 +27,7 @@ const Login = () => {
           <LoginForm />
         </CardContent>
         <CardFooter className="flex justify-center">
-          <p className="text-secondary-foreground">Don't have an account?</p>
+          <p className="text-secondary-foreground">Don&apos;t have an account?</p>
           <Link href="/signup">
             <Button variant="link">Sign up</Button>
           </Link>

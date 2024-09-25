@@ -51,10 +51,7 @@ const getUniqueUniversities = (data: Applications[]): string[] => {
   return uniqueUniversities;
 };
 
-const FilterSheet = ({
-  applications,
-  setFilteredApplications,
-}: Props) => {
+const FilterSheet = ({ applications, setFilteredApplications }: Props) => {
   const [countries] = useState<string[]>(getUniqueCountries(applications));
   const [universities] = useState<string[]>(
     getUniqueUniversities(applications)
@@ -159,7 +156,7 @@ const FilterSheet = ({
     setFilteredApplications(filteredData);
 
     console.log("Applied filters:", filters);
-  }, [filters]);
+  }, [filters, applications, setFilteredApplications]);
 
   return (
     <Sheet>
